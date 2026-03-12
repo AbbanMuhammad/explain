@@ -1,0 +1,10 @@
+project_id = "utreiygocsneldhkegux"
+
+[functions.explain]
+verify_jwt = false
+
+[functions.generate-quiz]
+verify_jwt = false
+
+[functions.check-answer]
+verify_jwt = false
