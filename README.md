@@ -24,6 +24,10 @@
 
 **ExplainIt** is a free, AI-powered web application designed to help Nigerian secondary school students (JSS1 – SS3) understand difficult topics across all subjects. Students can type or speak any question and instantly receive a clear, simple explanation — like having a personal tutor available 24/7.
 
+### Screenshots:
+
+- [Desktop View](./public/explainit-ng.netlify.app_.png)
+- [Mobile View](./public/explainit-ng.netlify.app_(iPhone%20SE).png)
 ---
 
 ## Problem Statement
