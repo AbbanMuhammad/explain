@@ -84,7 +84,7 @@ ExplainIt bridges this gap by providing:
 
 ## Live Demo
 
-🔗 **[View Live App](https://explainingit.netlify.app/)**
+🔗 **[View Live App](https://explainit-ng.netlify.app/)**
 
 > To test the app:
 > 1. Select your class level (JSS1 – SS3)
