@@ -1,73 +1,183 @@
-# Welcome to your Lovable project
+# ExplainIt 🎓
+### Explaining every topic, simply.
 
-## Project info
+> An AI-powered study companion for Nigerian secondary school students — built for the **3MTT NextGen Knowledge Showcase (Special Edition)**.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## 📌 Table of Contents
 
-There are several ways of editing your application.
+- [Overview](#overview)
+- [Problem Statement](#problem-statement)
+- [Solution](#solution)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Live Demo](#live-demo)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [3MTT Programme](#3mtt-programme)
+- [License](#license)
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Overview
 
-Changes made via Lovable will be committed automatically to this repo.
+**ExplainIt** is a free, AI-powered web application designed to help Nigerian secondary school students (JSS1 – SS3) understand difficult topics across all subjects. Students can type or speak any question and instantly receive a clear, simple explanation — like having a personal tutor available 24/7.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Problem Statement
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Many secondary school students in Nigeria struggle to understand difficult topics because:
 
-Follow these steps:
+- Textbook explanations are too complex and technical
+- Teachers are overloaded and unavailable for one-on-one help outside school hours
+- Private tutoring is expensive and inaccessible for low-income families
+- Students in rural areas have limited access to quality learning resources
+
+---
+
+## Solution
+
+ExplainIt bridges this gap by providing:
+
+- Instant AI-generated explanations in plain, simple language
+- Interactive quizzes to reinforce understanding after every explanation
+- Voice input for students who struggle with typing
+- Text-to-speech so students can listen to explanations
+- Visual illustrations to support different learning styles
+- Offline access to previously saved explanations
+- Zero cost — completely free for every student
+
+---
+
+## Features
+
+| Feature | Description |
+|---|---|
+| 🤖 **AI Explanations** | Type or speak any topic and get a simple, clear explanation instantly |
+| 🎯 **Multiple Choice Quiz** | 10 auto-generated questions after every explanation to test understanding |
+| ✍️ **Descriptive Questions** | 3 Open-ended questions to encourage deeper thinking |
+| 🎤 **Voice Input** | Speak your question instead of typing using Web Speech API |
+| 🔊 **Text-to-Speech** | Listen to any explanation read aloud using built-in browser speech |
+| 🖼️ **Visual Illustrations** | AI-generated images to support visual learners |
+| 📶 **Offline Mode (PWA)** | Install the app and access saved explanations without internet |
+| 📊 **Usage Analytics** | Live stats showing total questions asked and most popular topics |
+| 🌙 **Dark Mode** | Comfortable reading experience for night-time studying |
+| 📱 **Mobile Friendly** | Fully responsive design optimised for Android phones |
+
+---
+
+## Technologies Used
+
+- **React** — Frontend framework
+- **TypeScript** — Type-safe JavaScript
+- **Vite** — Fast build tool
+- **Tailwind CSS** — Utility-first styling
+- **shadcn/ui** — UI component library
+- **Lovable Cloud** — Backend, database, and edge functions
+- **Web Speech API** — Voice input and text-to-speech (no API key required)
+- **Pollinations.ai** — Free AI image generation for visual illustrations
+- **PWA / Service Worker** — Offline access and home screen installation
+
+---
+
+## Live Demo
+
+🔗 **[View Live App](https://explainingit.netlify.app/)**
+
+> To test the app:
+> 1. Select your class level (JSS1 – SS3)
+> 2. Choose a subject category
+> 3. Type or speak your question
+> 4. Get an instant explanation, quiz, and illustration
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm
+
+### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Step 1: Clone the repository
+git clone https://github.com/yourusername/explainit.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Step 2: Navigate into the project directory
+cd explainit
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The app will run locally at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build for Production
 
-**Use GitHub Codespaces**
+```sh
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Deploy to Netlify
 
-## What technologies are used for this project?
+1. Push your code to GitHub
+2. Connect your GitHub repo to [Netlify](https://netlify.com)
+3. Set build command: `npm run build`
+4. Set publish directory: `dist`
+5. Click **Deploy site**
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Project Structure
 
-## How can I deploy this project?
+```
+explainit/
+├── src/
+│   ├── components/        # Reusable UI components
+│   ├── pages/             # App pages (Home, Saved, About)
+│   ├── hooks/             # Custom React hooks
+│   └── main.tsx           # App entry point
+├── public/
+│   ├── manifest.json      # PWA manifest
+│   └── icons/             # App icons
+├── index.html
+├── vite.config.ts
+└── README.md
+```
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 3MTT Programme
 
-Yes, you can!
+This project was built as part of the **3 Million Technical Talent (3MTT) Programme** by the **Federal Ministry of Communications, Innovation and Digital Economy**, under the **NextGen Cohort Knowledge Showcase — Special Edition.**
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+**Challenge Pillar:** Education
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+> The 3MTT programme is a key part of Nigeria's commitment to building digital talent and creating a foundation for technology-led growth.
+
+---
+
+## 👤 Author
+
+**Sani Ismail**
+3MTT NextGen Fellow | [Kano State]
+- GitHub: [Profile](https://github.com/AbbanMuhammad)
+
+---
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+<p align="center">
+  Built with ❤️ for every Nigerian student | © 2026 ExplainIt
+</p>
