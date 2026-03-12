@@ -31,7 +31,7 @@ const HowItWorks = () => {
           How It Works
         </h2>
         <p className="text-sm sm:text-base text-muted-foreground">
-          Three simple steps to understanding any topic
+          Four simple steps to understanding any topic
         </p>
       </div>
       <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
