@@ -28,8 +28,8 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 w-full bg-background/90 backdrop-blur-md border-b shadow-sm">
       <div className="max-w-5xl mx-auto flex items-center justify-between px-4 h-14 sm:h-16">
-        <a href="#home" className="flex items-center gap-2 text-primary font-extrabold text-lg sm:text-xl tracking-tight" style={{ fontFamily: "'Nunito', sans-serif" }}>
-          <BookOpen className="w-6 h-6 sm:w-7 sm:h-7" />
+        <a href="#home" className="flex items-center gap-1.5 text-primary font-extrabold text-lg sm:text-xl tracking-tight" style={{ fontFamily: "'Nunito', sans-serif" }}>
+          <img src="/logo.svg" alt="ExplainIt logo" className="w-8 h-8 sm:w-9 sm:h-9" />
           ExplainIt
         </a>
 
