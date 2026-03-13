@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, BookOpen, Moon, Sun, Save } from "lucide-react";
+import { Menu, X, Moon, Sun, Save } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
