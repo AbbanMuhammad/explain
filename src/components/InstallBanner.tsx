@@ -9,7 +9,7 @@ interface BeforeInstallPromptEvent extends Event {
 
 const InstallBanner = () => {
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
-  const [dismissed, setDismissed] = useState(false);
+  const [dismissed, setDismissed] = useState(() => localStorage.getItem("install-dismissed") === "1");
 
   useEffect(() => {
     const handler = (e: Event) => {
