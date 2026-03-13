@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Saved from "./pages/Saved";
 import NotFound from "./pages/NotFound";
 import InstallBanner from "./components/InstallBanner";
+import UpdateBanner from "./components/UpdateBanner";
 
 const queryClient = new QueryClient();
 
