@@ -25,6 +25,7 @@ const App = () => (
         </Routes>
       </BrowserRouter>
       <InstallBanner />
+      <UpdateBanner />
     </TooltipProvider>
   </QueryClientProvider>
 );
