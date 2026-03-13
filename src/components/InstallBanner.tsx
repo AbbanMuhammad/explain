@@ -41,7 +41,7 @@ const InstallBanner = () => {
       <Button size="sm" variant="secondary" onClick={handleInstall} className="shrink-0 font-semibold">
         Install
       </Button>
-      <button onClick={() => setDismissed(true)} className="p-1 opacity-70 hover:opacity-100" aria-label="Dismiss">
+      <button onClick={() => { setDismissed(true); localStorage.setItem("install-dismissed", "1"); }} className="p-1 opacity-70 hover:opacity-100" aria-label="Dismiss">
         <X className="w-4 h-4" />
       </button>
     </div>
