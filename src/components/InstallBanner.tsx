@@ -9,7 +9,7 @@ interface BeforeInstallPromptEvent extends Event {
 
 const InstallBanner = () => {
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
-  const [dismissed, setDismissed] = useState(false);
+  const [dismissed, setDismissed] = useState(() => localStorage.getItem("install-dismissed") === "1");
 
   useEffect(() => {
     const handler = (e: Event) => {
@@ -26,6 +26,7 @@ const InstallBanner = () => {
     const { outcome } = await deferredPrompt.userChoice;
     if (outcome === "accepted") setDeferredPrompt(null);
     setDismissed(true);
+    localStorage.setItem("install-dismissed", "1");
   };
 
   if (!deferredPrompt || dismissed) return null;
@@ -40,7 +41,7 @@ const InstallBanner = () => {
       <Button size="sm" variant="secondary" onClick={handleInstall} className="shrink-0 font-semibold">
         Install
       </Button>
-      <button onClick={() => setDismissed(true)} className="p-1 opacity-70 hover:opacity-100" aria-label="Dismiss">
+      <button onClick={() => { setDismissed(true); localStorage.setItem("install-dismissed", "1"); }} className="p-1 opacity-70 hover:opacity-100" aria-label="Dismiss">
         <X className="w-4 h-4" />
       </button>
     </div>
